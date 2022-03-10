@@ -1,0 +1,39 @@
+.contactsBlock {
+    height: 100%;
+    background-color: rgba(246, 90, 147, 0.7);
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactsContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 200px;
+}
+.contactsContainer input{
+    height: 20%;
+}
+.contactsContainer textarea{
+    height: 40%;
+}
+
+
+.title {
+    background-color: #f3e1e1;
+}
+.terms {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
