@@ -11,7 +11,7 @@ type TitlePropsType = {
 
 const Title: FC<TitlePropsType> = ({title, direction, dark}) => {
 
-    const directionAnimate = direction === 'left' ? -200 : 200
+    const directionAnimate = direction === 'left' ? -100 : 100
     const titleAnimation = {
         hidden: {
             x: directionAnimate,
@@ -29,6 +29,7 @@ const Title: FC<TitlePropsType> = ({title, direction, dark}) => {
     ${s.titleBar}  
     ${dark ? s.titleBarDark : s.titleBar}`
     return (
+
         <motion.div
             initial='hidden'
             whileInView='visible'
