@@ -1,0 +1,42 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+.skill {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include text($titleFontFamily, 12pt, normal, .1rem, $textColor);
+}
+.skill h3{
+    margin: 10px 0 0 0;
+}
+.iconWrap {
+    height: 90px;
+    width: 90px;
+
+}
+/*.progress {*/
+/*    background-color: #d8d8d8;*/
+/*    position: relative;*/
+/*    margin: 15px 0;*/
+/*    height: 20px;*/
+/*    width: 100%;*/
+/*}*/
+/*.progressDone {*/
+/*    background: linear-gradient(to left, #F2709C, #FF9472);*/
+/*    color: #fff;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100%;*/
+/*    width: 0;*/
+/*    opacity: 0;*/
+/*    transition: 1s ease 0.3s;*/
+/*}*/
+
+@media screen and (max-width: 980px) {
+    .skill {
+        margin: 5px;
+    }
+}

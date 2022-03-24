@@ -1,0 +1,76 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+.contactsBlock {
+    height: 100%;
+    /*background-color: rgb(246, 118, 163);*/
+    background: $bgColorLight;
+    padding: 50px 0;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactsContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 200px;
+}
+.contactsContainer input{
+    border: 0;
+    box-sizing: border-box;
+    color: #383838;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+.contactsContainer textarea{
+    background: #ffffff;
+    border: 0;
+    box-sizing: border-box;
+    color: #383838;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    height: 40%;
+    resize: none;
+}
+.terms {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    border: 2px solid #fff;
+    background: #a594dc;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13pt;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    @include text($titleFontFamily, 14pt, uppercase, .1rem, $textColor);
+}
+.button:hover {
+    background: #7960dc;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 850px) {
+    .contactsContainer form {
+        width: 80%;
+    }
+}
+
+

@@ -1,13 +1,15 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    background-color: #61dafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  position: sticky;
+}
+.header .headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-}
-.headerContainer{
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-}
+/*# sourceMappingURL=Header.module.css.map */

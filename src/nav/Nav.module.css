@@ -1,5 +1,42 @@
-.nav {
-    display: flex;
-    justify-content: space-between; /*растягивает контент по краям с одинаковым интревалом*/
-    width: 300px;
+.containerStyle {
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  align-items: start;
+  justify-content: start;
 }
+.containerStyle .tabStyle {
+  height: 100%;
+  position: relative;
+  padding: 0 15px;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 14pt;
+  text-transform: normal;
+  letter-spacing: 0rem;
+  color: #29292a;
+}
+@media screen and (max-width: 480px) {
+  .containerStyle .tabStyle {
+    font-family: "Nunito", sans-serif;
+    font-size: 12pt;
+    text-transform: normal;
+    letter-spacing: 0rem;
+    color: #29292a;
+    padding: 0 10px;
+  }
+}
+.containerStyle .selectionStyle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=Nav.module.css.map */

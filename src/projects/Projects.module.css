@@ -1,23 +1,26 @@
 .projectsBlock {
-    height: 100%;
-    background-color: #6bf6dc;
+  height: 100%;
+  /* background-color: #6bf6dc;*/
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  padding: 50px 0 100px 0;
+}
+.projectsBlock .projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.projectsBlock .projectsContainer .projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1360px) {
+  .projectsBlock .projectsContainer .projects {
+    justify-content: center;
+  }
 }
 
-.projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.title {
-    background-color: #f3e1e1;
-}
-
-.projects {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/*# sourceMappingURL=Projects.module.css.map */

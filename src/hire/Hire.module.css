@@ -1,25 +1,20 @@
-.hireBlock {
-    height: 250px;
-    background-color: #64a6f6;
-}
-
 .hireContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.hireContainer .terms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 14pt;
+  text-transform: normal;
+  letter-spacing: 0.1rem;
+  color: #29292a;
 }
 
-.title {
-    background-color: #f3e1e1;
-}
-.terms {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
+/*# sourceMappingURL=Hire.module.css.map */

@@ -1,23 +1,20 @@
-.skillsBlock {
-    height: 100vh;
-    background-color: #c9f1a1;
-}
-
 .skillsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.skillsContainer .skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 980px) {
+  .skillsContainer .skills {
+    justify-content: center;
+  }
 }
 
-.title {
-    background-color: #f3e1e1;
-}
-
-.skills {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/*# sourceMappingURL=Skills.module.css.map */

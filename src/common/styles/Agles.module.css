@@ -1,0 +1,64 @@
+.angles {
+    z-index: 1;
+}
+
+.section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.light .angleTop {
+    display: block;
+    position: absolute;
+    top: -29px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../../img/angle_top.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+    image-rendering: optimizeQuality;
+}
+
+.light .sectionInner {
+    background-color: #FFF;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 50px 0;
+}
+
+.sectionInner {
+    position: relative;
+    width: 100%;
+    margin: 25px auto 25px auto;
+}
+
+.light .angleBottom {
+    display: block;
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../../img/angle_bottom.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    image-rendering: optimizeQuality;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .light .angleTop {
+        background-image: url(../../img/angle_top_mobile.png);
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .light .angleBottom {
+        background-image: url(../../img/angle_bottom_mobile.png);
+    }
+}
+

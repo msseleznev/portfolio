@@ -1,0 +1,51 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.footerBlock {
+  height: 100%;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    @include text($titleFontFamily, 14pt, normal, .0rem, $textColor);
+
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      max-width: 250px;
+      width: 50%;
+      align-items: center;
+      flex-wrap: wrap;
+
+
+
+      .item {
+        background-color: #fab8b8;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+      }
+      .icon{
+        margin: 5px;
+        width: 80%;
+        color: #FFFFFF;
+      }
+
+      .title {
+        background-color: #f3e1e1;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+.hexWrap {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.hexWrap .hexagon {
+  background-color: #7960dc;
+  display: inline-block;
+  height: 100%;
+  width: 57.735%;
+}
+.hexWrap :before {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: 21.1325%;
+  top: 0;
+  transform: rotateZ(60deg);
+  width: inherit;
+  z-index: 0;
+}
+.hexWrap :after {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: 21.1325%;
+  top: 0;
+  transform: rotateZ(-60deg);
+  width: inherit;
+  z-index: 0;
+}
+.hexWrap .icon {
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=SuperIcons.module.css.map */

@@ -1,19 +1,48 @@
 .project {
-    width: 350px;
-    background-color: #f3e1e1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+  width: 350px;
+  background: linear-gradient(200deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12pt;
+  text-transform: normal;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
 }
 
 .preview {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 100%;
-    background-color: rgba(250, 82, 82, 0.61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
+.preview::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-color: rgba(41, 41, 42, 0.71);
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.preview:hover::before {
+  opacity: 0.1;
+}
+
+@media screen and (max-width: 1360px) {
+  .project {
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=Project.module.css.map */

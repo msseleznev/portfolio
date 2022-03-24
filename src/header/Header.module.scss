@@ -1,0 +1,19 @@
+@import "../common/styles/sass/variables";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: $bgColorLight;
+  position: sticky;
+
+
+  .headerContainer {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+}

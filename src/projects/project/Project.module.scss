@@ -1,0 +1,44 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+.project {
+    width: 350px;
+    background: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    @include text($titleFontFamily, 12pt, normal, .1rem, $textSecondColor);
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        background-color: rgba(41, 41, 42, 0.71);
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    &:hover::before {
+        opacity: 0.1;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .project {
+        margin: 5px;
+    }
+}

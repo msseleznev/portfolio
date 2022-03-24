@@ -1,0 +1,62 @@
+.aboutBlock {
+  height: 100%;
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  padding: 0 0 100px 0;
+}
+.aboutBlock .aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aboutBlock .aboutContainer .labelWrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.aboutBlock .aboutContainer .labelWrap .labelWrapItem {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.aboutBlock .about {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  font-size: 14pt;
+  text-transform: normal;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+@media screen and (max-width: 805px) {
+  .aboutBlock .about {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aboutBlock .about {
+    font-family: "Nunito", sans-serif;
+    font-size: 10pt;
+    text-transform: normal;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+  }
+}
+.aboutBlock .text {
+  width: 320px;
+}
+.aboutBlock .photo {
+  display: flex;
+  align-items: center;
+  width: 310px;
+  height: 400px;
+}
+
+/*# sourceMappingURL=About.module.css.map */

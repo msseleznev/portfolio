@@ -1,0 +1,50 @@
+
+.hexWrap {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  .hexagon {
+    background-color: #7960dc;
+    //background-color: #a4a4a4;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% * 0.57735);
+
+  }
+
+  :before {
+    background-color: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    top: 0;
+    transform: rotateZ(60deg);
+    width: inherit;
+    z-index: 0;
+  }
+
+  :after {
+    background-color: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    top: 0;
+    transform: rotateZ(-60deg);
+    width: inherit;
+    z-index: 0;
+  }
+
+  .icon {
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: 1;
+  }
+
+}

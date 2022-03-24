@@ -1,0 +1,35 @@
+.title {
+  font-family: "Nunito", sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #29292a;
+}
+.title .title h2 {
+  margin: 0;
+}
+.title .titleBar {
+  background: #29292a;
+  height: 3px;
+  margin: 10px auto 50px auto;
+  width: 70px;
+}
+
+.titleDark {
+  font-family: "Nunito", sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+.titleDark .titleDark h2 {
+  margin: 0;
+}
+.titleDark .titleBarDark {
+  background: #ffffff;
+  height: 3px;
+  margin: 10px auto 50px auto;
+  width: 70px;
+}
+
+/*# sourceMappingURL=Title.module.css.map */

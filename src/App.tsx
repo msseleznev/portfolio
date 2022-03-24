@@ -2,7 +2,7 @@ import React from 'react';
 import './App.module.css';
 import s from './App.module.css'
 import Header from "./header/Header";
-import Main from "./main/Main";
+import {About} from "./about/About";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import Hire from "./hire/Hire";
@@ -12,9 +12,10 @@ import Footer from "./footer/Footer";
 
 function App () {
     return (
-        <div className={s.wrapper}>
+        <div className={`${s.wrapper} ${s.back}`}>
             <Header/>
-            <Main/>
+           {/* <Main/>*/}
+            <About/>
             <Skills/>
             <Projects/>
             <Hire/>

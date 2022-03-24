@@ -1,0 +1,17 @@
+@import "./variables";
+@mixin text($font-family, $font-size, $text-transform, $letter-spacing, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  text-transform: $text-transform;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+@mixin titleBar($background, $height, $margin, $width) {
+  background: $background;
+  height: $height;
+  margin: $margin;
+  width: $width;
+
+}
+
+//@include text($titleFontFamily, 12pt, normal, .1rem, $textColor);

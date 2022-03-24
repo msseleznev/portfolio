@@ -1,0 +1,32 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.priorityWrap {
+  width: 200px;
+  height: 250px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include text($titleFontFamily, 12pt, normal, .1rem, $textSecondColor);
+  @media screen and (max-width: 600px) {
+    @include text($titleFontFamily, 10pt, normal, .1rem, $textSecondColor);
+  }
+  .iconWrap {
+    width: 80px;
+    height: 80px;
+    @media screen and (min-width: 600px) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .title h2 {
+    margin: 10px 0 0 0;
+  }
+  .title p {
+    margin: 5px 0 0 0;
+  }
+}

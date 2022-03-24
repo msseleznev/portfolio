@@ -1,0 +1,73 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.aboutBlock {
+  height: 100%;
+  //background: $bgImg 50%/cover no-repeat;
+  background: $bgColorLight;
+  padding: 0 0 100px 0;
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .labelWrap {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      .labelWrapItem {
+        align-items: center;
+        display: flex;
+
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+      }
+    }
+  }
+
+  .about {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include text($titleFontFamily, 14pt, normal, .1rem, $textSecondColor);
+    @media screen and (max-width: 805px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 600px) {
+      @include text($titleFontFamily, 10pt, normal, .1rem, $textSecondColor);
+    }
+
+
+  }
+
+  .text {
+    width: 320px;
+    //background-color: #f3e1e1;
+  }
+
+  .photo {
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 400px;
+    //background-color: #f3e1e1;
+  }
+
+
+}
+
+
+
+
+
+
+

@@ -1,15 +1,47 @@
 .skill {
-    width: 250px;
-    background-color: #f3e1e1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 12pt;
+  text-transform: normal;
+  letter-spacing: 0.1rem;
+  color: #29292a;
 }
 
-.icon {
-    height: 60px;
-    width: 60px;
-    background-color: #fab8b8;
+.skill h3 {
+  margin: 10px 0 0 0;
 }
+
+.iconWrap {
+  height: 90px;
+  width: 90px;
+}
+
+/*.progress {*/
+/*    background-color: #d8d8d8;*/
+/*    position: relative;*/
+/*    margin: 15px 0;*/
+/*    height: 20px;*/
+/*    width: 100%;*/
+/*}*/
+/*.progressDone {*/
+/*    background: linear-gradient(to left, #F2709C, #FF9472);*/
+/*    color: #fff;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100%;*/
+/*    width: 0;*/
+/*    opacity: 0;*/
+/*    transition: 1s ease 0.3s;*/
+/*}*/
+@media screen and (max-width: 980px) {
+  .skill {
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=Skill.module.css.map */

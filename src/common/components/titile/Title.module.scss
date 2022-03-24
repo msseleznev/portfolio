@@ -1,0 +1,28 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.title {
+  @include text($titleFontFamily, 14pt, uppercase, .1rem, $textColor);
+  .title h2 {
+    margin: 0;
+  }
+  .titleBar {
+    @include titleBar($bgBarColor, 3px, 10px auto 50px auto, 70px);
+  }
+}
+.titleDark {
+  @include text($titleFontFamily, 14pt, uppercase, .1rem, $textSecondColor);
+  .titleDark h2 {
+    margin: 0;
+  }
+  .titleBarDark {
+    @include titleBar($bgBarColorDark, 3px, 10px auto 50px auto, 70px);
+  }
+}
+
+
+
+
+
+
+
