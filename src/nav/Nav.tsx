@@ -13,10 +13,10 @@ type TabsItemType = {
     id: string
 }
 const tabs: TabsType = [
-    {name: "About", color: "rgb(4,194,201)", id: "#about",},
-    {name: "Skills", color: "rgb(4,194,201)", id: "#skills",},
-    {name: "Projects", color: "rgb(4,194,201)", id: "#projects",},
-    {name: "Contacts", color: "rgb(4,194,201)", id: "#contacts",},
+    {name: "About", color: "rgb(129,196,164)", id: "#about",},
+    {name: "Skills", color: "rgb(129,196,164)", id: "#skills",},
+    {name: "Projects", color: "rgb(129,196,164)", id: "#projects",},
+    {name: "Contacts", color: "rgb(129,196,164)", id: "#contacts",},
 ];
 
 const duration = 0.3;

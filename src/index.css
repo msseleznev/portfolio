@@ -23,4 +23,5 @@ code {
   url("./common/fonts/wastebased.otf") format("otf"),
   url("./common/fonts/wastebased.svg") format("svg");
   font-weight: bold;
+  font-size: small;
 }

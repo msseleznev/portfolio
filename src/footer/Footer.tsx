@@ -13,7 +13,7 @@ const Footer = () => {
     const styleIcon = {
         width: 50,
         height: 50,
-        backgroundColor: "rgb(4,194,201)",
+        backgroundColor: "rgb(129,196,164)",
         borderRadius: 2,
         scale: 0.7
     }

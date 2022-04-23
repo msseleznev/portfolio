@@ -56,23 +56,20 @@
 }
 
 .button {
-  border: 2px solid #fff;
-  background: #04c2c9;
-  box-sizing: inherit;
+  border: 2px solid;
+  background: #81c4a4;
   cursor: pointer;
-  display: inline-block;
-  font-size: 13pt;
   padding: 10px 20px;
   transition: all 0.5s;
   font-family: "Wastebased", bolt;
   font-size: 14pt;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #29292a;
+  color: #ffffff;
 }
 
 .button:hover {
-  background: #0391a1;
+  background: #689a84;
   color: #FFFFFF;
 }
 

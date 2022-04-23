@@ -20,7 +20,7 @@ const Project: React.FC<ProjectPropsType> = ({title, style, description, demoUrl
                         variant="contained"
                         size={"small"}
                         style={{
-                            backgroundColor: "rgb(4,194,201)"
+                            backgroundColor: "rgb(129,196,164)"
                         }}
                 >Demo</Button>
                 <Button className={s.button} target={"_blank"}
@@ -28,7 +28,7 @@ const Project: React.FC<ProjectPropsType> = ({title, style, description, demoUrl
                         variant="contained"
                         size={"small"}
                         style={{
-                            backgroundColor: "rgb(4,194,201)"
+                            backgroundColor: "rgb(129,196,164)"
                         }}>Code</Button>
             </div>
             <h3>{title}</h3>

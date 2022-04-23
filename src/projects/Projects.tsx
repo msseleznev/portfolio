@@ -3,9 +3,9 @@ import style from '../common/styles/Container.module.css'
 import s from './Projects.module.scss'
 import Project from "./project/Project";
 import Title from "../common/components/titile/Title";
-import todoImg from '../img/todo.png'
-import socialImg from '../img/social.png'
-import counterImg from '../img/counter.png'
+import todoImg from '../img/todo-b.png';
+import socialImg from '../img/social-b.png';
+import counterImg from '../img/counter-b.png';
 
 const Projects = () => {
     const social = {
