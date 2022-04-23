@@ -32,12 +32,11 @@ export const Skill: FC<SkillPropsType> = ({title, progress}) => {
             <h3>{title}</h3>
             <div className={s.progress}>
                 <div className={s.progressDone}>
-
                 </div>
             </div>
 
 
-            <span>{progress}%</span>
+            {/*<span>{progress}%</span>*/}
 
 
         </div>

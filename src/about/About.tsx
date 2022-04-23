@@ -4,6 +4,8 @@ import s from './About.module.scss'
 import photo from './photo.png'
 import Title from "../common/components/titile/Title";
 import {Priority} from "./priority/Priority";
+import ReactTypingEffect from 'react-typing-effect'
+
 
 
 export const About = () => {
@@ -30,7 +32,12 @@ export const About = () => {
                         <span>Hi There</span>
                         <h1>I'm Mike</h1>
                         <p> and I'm a </p>
-                        <h2>Front-end Developer</h2>
+                        <ReactTypingEffect
+                            speed={100}
+                            eraseSpeed = {100}
+                            typingDelay ={800}
+                            text={["Front-end Developer"]}
+                        />
                     </div>
                     <div className={s.photo}>
                         <img src={photo}/>

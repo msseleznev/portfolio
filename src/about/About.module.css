@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-family: "Nunito", sans-serif;
+  font-family: "Wastebased", bolt;
   font-size: 14pt;
   text-transform: normal;
   letter-spacing: 0.1rem;
@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 600px) {
   .aboutBlock .about {
-    font-family: "Nunito", sans-serif;
+    font-family: "Wastebased", bolt;
     font-size: 10pt;
     text-transform: normal;
     letter-spacing: 0.1rem;

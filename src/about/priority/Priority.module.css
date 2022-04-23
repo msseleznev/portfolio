@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Wastebased", bolt;
   font-size: 12pt;
   text-transform: normal;
   letter-spacing: 0.1rem;
@@ -14,7 +14,7 @@
 }
 @media screen and (max-width: 600px) {
   .priorityWrap {
-    font-family: "Nunito", sans-serif;
+    font-family: "Wastebased", bolt;
     font-size: 10pt;
     text-transform: normal;
     letter-spacing: 0.1rem;

@@ -15,7 +15,7 @@
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  font-family: "Nunito", sans-serif;
+  font-family: "Wastebased", bolt;
   font-size: 14pt;
   text-transform: normal;
   letter-spacing: 0rem;
@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 480px) {
   .containerStyle .tabStyle {
-    font-family: "Nunito", sans-serif;
+    font-family: "Wastebased", bolt;
     font-size: 12pt;
     text-transform: normal;
     letter-spacing: 0rem;

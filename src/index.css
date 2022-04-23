@@ -15,3 +15,12 @@ code {
   scroll-behavior: smooth;
   scroll-padding-top: 40px;
 }
+@font-face {
+  font-family: "Wastebased";
+  src: local("Wastebased"),
+  url("./common/fonts/wastebased.ttf") format("truetype"),
+  url("./common/fonts/wastebased.woff") format("woff"),
+  url("./common/fonts/wastebased.otf") format("otf"),
+  url("./common/fonts/wastebased.svg") format("svg");
+  font-weight: bold;
+}
