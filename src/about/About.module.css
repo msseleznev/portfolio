@@ -59,5 +59,8 @@
   width: 310px;
   height: 400px;
 }
+.aboutBlock .photo img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=About.module.css.map */

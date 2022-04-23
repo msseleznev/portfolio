@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../common/styles/Container.module.css'
 import s from './About.module.scss'
-import cat from './cat.png'
+import photo from './photo.png'
 import Title from "../common/components/titile/Title";
 import {Priority} from "./priority/Priority";
 
@@ -33,7 +33,7 @@ export const About = () => {
                         <h2>Front-end Developer</h2>
                     </div>
                     <div className={s.photo}>
-                        <img src={cat}/>
+                        <img src={photo}/>
                     </div>
 
                 </div>

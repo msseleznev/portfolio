@@ -20,7 +20,7 @@ const Footer = () => {
     const hover = {scale: 0.9}
 
     return (
-        <div className={`${a.section} ${a.angles} ${a.light}`}>
+        <div id='contacts' className={`${a.section} ${a.angles} ${a.light}`}>
             <div className={a.angleTop}/>
             <div className={s.footerBlock}>
                 <div className={`${style.container} ${s.footerContainer}`}>
