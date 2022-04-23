@@ -3,7 +3,7 @@
 .projectsBlock {
   height: 100%;
   /* background-color: #6bf6dc;*/
-  background: $bgColorLight;
+  background: $bgColorDark;
   padding: 50px 0 100px 0;
 
   .projectsContainer {
@@ -22,6 +22,7 @@
         justify-content: center;
       }
     }
+
   }
 }
 

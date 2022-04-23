@@ -31,7 +31,7 @@ const progress = {
 const skills = Object.keys(progress)
 
 
-const Skills = () => {
+const Skills: React.FC = () => {
     // const titleAnimation = {
     //     hidden: {
     //         x: -1500,
@@ -49,20 +49,19 @@ const Skills = () => {
 
     return (
 
-        <div className={`${a.section} ${a.angles} ${a.light}`}>
+        <div id="skills" className={`${a.section} ${a.angles} ${a.light}`}>
             <div className={a.angleTop}/>
             <div className={a.sectionInner}>
                 <div className={`${style.container} ${s.skillsContainer}`}>
                     <Title title={'skills'} direction={'left'}/>
                     <div className={s.skills}>
-                        <Skill title={"HTML"} progress={80} />
-                        <Skill title={"CSS/SASS"} progress={80} />
-                        <Skill title={"React"} progress={70} />
-                        <Skill title={"JavaScript"} progress={80} />
-                        <Skill title={"Material UI"} progress={75} />
-                        <Skill title={"TypeScript"} progress={85} />
-                        <Skill title={"Git/GitHub"}  progress={90}/>
-
+                        <Skill title={"React"} progress={70}/>
+                        <Skill title={"JavaScript"} progress={80}/>
+                        <Skill title={"TypeScript"} progress={85}/>
+                        <Skill title={"HTML"} progress={80}/>
+                        <Skill title={"CSS/SASS"} progress={80}/>
+                        <Skill title={"Material UI"} progress={75}/>
+                        <Skill title={"Git/GitHub"} progress={90}/>
                     </div>
                 </div>
             </div>

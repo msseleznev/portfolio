@@ -3,7 +3,7 @@
 .contactsBlock {
     height: 100%;
     /*background-color: rgb(246, 118, 163);*/
-    background: $bgColorLight;
+    background: $bgColorDark;
     padding: 50px 0;
 }
 
@@ -54,7 +54,7 @@
 }
 .button {
     border: 2px solid #fff;
-    background: #a594dc;
+    background: rgb(4,194,201);
     box-sizing: inherit;
     cursor: pointer;
     display: inline-block;
@@ -64,7 +64,8 @@
     @include text($titleFontFamily, 14pt, uppercase, .1rem, $textColor);
 }
 .button:hover {
-    background: #7960dc;
+
+    background: rgb(3, 145, 161);
     color: #FFFFFF;
 }
 @media screen and (max-width: 850px) {

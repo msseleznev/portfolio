@@ -6,21 +6,23 @@ import Title from "../common/components/titile/Title";
 import {Priority} from "./priority/Priority";
 
 
-
 export const About = () => {
     return (
 
-        <div className={s.aboutBlock}>
+        <div id="about" className={s.aboutBlock}>
             <div className={`${style.container} ${s.aboutContainer}`}>
                 <Title title={'about'} direction={"right"} dark/>
                 <div className={s.labelWrap}>
                     <div className={s.labelWrapItem}>
-                        <Priority title={"Fast"} description={"Fast load times and lag free interaction, my highest priority."}/>
+                        <Priority title={"Fast"}
+                                  description={"Fast load times and lag free interaction, my highest priority."}/>
                         <Priority title={"Intuitive"} description={"Strong preference for easy to use, intuitive UI."}/>
                     </div>
                     <div className={s.labelWrapItem}>
-                        <Priority title={"Responsive"} description={"My layouts will work on any device, big or small."}/>
-                        <Priority title={"Dynamic"} description={"Websites don't have to be static, I love making pages come to life."}/>
+                        <Priority title={"Responsive"}
+                                  description={"My layouts will work on any device, big or small."}/>
+                        <Priority title={"Dynamic"}
+                                  description={"Websites don't have to be static, I love making pages come to life."}/>
                     </div>
                 </div>
                 <div className={s.about}>

@@ -1,7 +1,7 @@
 .projectsBlock {
   height: 100%;
   /* background-color: #6bf6dc;*/
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  background: linear-gradient(54deg, rgba(37, 37, 37, 0.95) 34%, rgba(86, 86, 86, 0.95));
   padding: 50px 0 100px 0;
 }
 .projectsBlock .projectsContainer {

@@ -4,14 +4,16 @@
 .aboutBlock {
   height: 100%;
   //background: $bgImg 50%/cover no-repeat;
-  background: $bgColorLight;
+  background: $bgColorDark;
   padding: 0 0 100px 0;
+  margin-top: 40px;
 
   .aboutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
 
     .labelWrap {
       display: flex;

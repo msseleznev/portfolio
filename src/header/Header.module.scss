@@ -4,14 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  background: $bgColorLight;
-  position: sticky;
+  height: 40px;
+  background: #2d2d2d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
 
 
   .headerContainer {
     display: flex;
-
     align-items: center;
     justify-content: flex-end;
   }

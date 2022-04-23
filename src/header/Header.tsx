@@ -8,7 +8,6 @@ const Header = () => {
     return (
         <div className={s.header} >
             <div className={`${style.container} ${s.headerContainer}`}>
-
                 <Nav/>
             </div>
         </div>

@@ -1,6 +1,6 @@
 .project {
   width: 350px;
-  background: linear-gradient(200deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  background: linear-gradient(54deg, #04c2c9 34%, #565656);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,9 +12,9 @@
   letter-spacing: 0.1rem;
   color: #ffffff;
 }
-
-.preview {
+.project .preview {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 250px;
@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   position: relative;
 }
-.preview::before {
+.project .preview::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -35,8 +35,11 @@
   opacity: 0.5;
   transition: 0.3s;
 }
-.preview:hover::before {
+.project .preview:hover::before {
   opacity: 0.1;
+}
+.project .preview .button {
+  margin: 5px;
 }
 
 @media screen and (max-width: 1360px) {

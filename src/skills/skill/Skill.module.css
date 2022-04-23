@@ -41,6 +41,7 @@
 @media screen and (max-width: 980px) {
   .skill {
     margin: 5px;
+    width: 44%;
   }
 }
 

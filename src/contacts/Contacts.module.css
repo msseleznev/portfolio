@@ -1,7 +1,7 @@
 .contactsBlock {
   height: 100%;
   /*background-color: rgb(246, 118, 163);*/
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  background: linear-gradient(54deg, rgba(37, 37, 37, 0.95) 34%, rgba(86, 86, 86, 0.95));
   padding: 50px 0;
 }
 
@@ -57,7 +57,7 @@
 
 .button {
   border: 2px solid #fff;
-  background: #a594dc;
+  background: #04c2c9;
   box-sizing: inherit;
   cursor: pointer;
   display: inline-block;
@@ -72,7 +72,7 @@
 }
 
 .button:hover {
-  background: #7960dc;
+  background: #0391a1;
   color: #FFFFFF;
 }
 

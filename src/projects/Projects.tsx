@@ -18,13 +18,25 @@ const Projects = () => {
         backgroundImage: `url(${counterImg})`,
     };
     return (
-        <div className={s.projectsBlock}>
+        <div id="projects" className={s.projectsBlock}>
             <div className={`${style.container} ${s.projectsContainer}`}>
                 <Title title={'projects'} direction={"right"} dark/>
                 <div className={s.projects}>
-                    <Project style = {social} title={'Network'} description={"The most incredible social network"}/>
-                    <Project style = {todo} title={'Todo'} description={"The most convenient to-do list"}/>
-                    <Project style = {counter} title={'Counter'} description={"The most accurate counter in the world"}/>
+                    <Project style={social}
+                             title={'Network'}
+                             description={"The most incredible social network"}
+                             demoUrl={''}
+                             codeUrl={''}/>
+                    <Project style={todo}
+                             title={'Todo'}
+                             description={"The most convenient to-do list"}
+                             demoUrl={'https://msseleznev.github.io/todolist-app'}
+                             codeUrl={'https://github.com/msseleznev/todolist-app'}/>
+                    <Project style={counter}
+                             title={'Counter'}
+                             description={"The most accurate counter in the world"}
+                             demoUrl={'https://msseleznev.github.io/counter/'}
+                             codeUrl={'https://github.com/msseleznev/counter'}/>
                 </div>
 
             </div>
