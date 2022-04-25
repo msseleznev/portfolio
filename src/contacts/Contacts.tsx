@@ -6,7 +6,7 @@ import Title from "../common/components/titile/Title";
 
 const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div id='contacts' className={s.contactsBlock}>
             <div className={`${style.container} ${s.contactsContainer}`}>
                 <Title title={'Contacts'} direction={'right'} dark/>
                 <form>

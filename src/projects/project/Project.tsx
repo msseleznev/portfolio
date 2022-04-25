@@ -1,5 +1,4 @@
 import React, {CSSProperties} from 'react';
-
 import s from './Project.module.scss'
 import Button from "@mui/material/Button";
 

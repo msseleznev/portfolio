@@ -11,10 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-:root {
-  scroll-behavior: smooth;
-  scroll-padding-top: 40px;
-}
+/*:root {*/
+/*  scroll-behavior: smooth;*/
+/*  scroll-padding-top: 40px;*/
+/*}*/
 @font-face {
   font-family: "Wastebased";
   src: local("Wastebased"),

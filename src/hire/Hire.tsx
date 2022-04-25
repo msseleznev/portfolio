@@ -19,7 +19,7 @@ const Hire = () => {
 
                     <div className={s.terms}>
                         <h2>Ready for remote work</h2>
-                        <Button variant="outlined">hire me</Button>
+                        {/*<Button variant="outlined">hire me</Button>*/}
                     </div>
 
                 </div>
