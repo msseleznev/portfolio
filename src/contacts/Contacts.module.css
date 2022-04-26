@@ -16,35 +16,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 50%;
-  height: 200px;
 }
 
 .contactsContainer input {
-  border: 0;
-  box-sizing: border-box;
-  color: #383838;
-  display: block;
-  font-size: 12pt;
-  margin-bottom: 3px;
+  color: #ffffff;
   outline: none;
-  padding: 10px 15px;
   width: 100%;
+  background: #3b3b3b;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1000px #3b3b3b inset;
 }
 
 .contactsContainer textarea {
-  background: #ffffff;
-  border: 0;
-  box-sizing: border-box;
-  color: #383838;
-  display: block;
-  font-size: 12pt;
-  margin-bottom: 3px;
-  outline: none;
-  padding: 10px 15px;
+  color: #ffffff;
+}
+
+.mUIInput {
   width: 100%;
-  height: 40%;
-  resize: none;
+}
+
+.mUITextarea {
+  width: 100%;
+}
+
+.label {
+  color: #b7b7b7 !important;
 }
 
 .terms {
@@ -56,7 +59,7 @@
 }
 
 .button {
-  border: 2px solid;
+  border: none;
   background: #81c4a4;
   cursor: pointer;
   padding: 10px 20px;
@@ -70,7 +73,7 @@
 
 .button:hover {
   background: #689a84;
-  color: #FFFFFF;
+  color: #d2d0d0;
 }
 
 @media screen and (max-width: 850px) {

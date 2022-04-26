@@ -1,74 +1,85 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
+
 .contactsBlock {
-    height: 100%;
-    /*background-color: rgb(246, 118, 163);*/
-    background: $bgColorDark;
-    padding: 50px 0;
+  height: 100%;
+  /*background-color: rgb(246, 118, 163);*/
+  background: $bgColorDark;
+  padding: 50px 0;
 }
 
 .contactsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.contactsContainer form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    height: 200px;
-}
-.contactsContainer input{
-    border: 0;
-    box-sizing: border-box;
-    color: #383838;
-    display: block;
-    font-size: 12pt;
-    margin-bottom: 3px;
-    outline: none;
-    padding: 10px 15px;
-    width: 100%;
-}
-.contactsContainer textarea{
-    background: #ffffff;
-    border: 0;
-    box-sizing: border-box;
-    color: #383838;
-    display: block;
-    font-size: 12pt;
-    margin-bottom: 3px;
-    outline: none;
-    padding: 10px 15px;
-    width: 100%;
-    height: 40%;
-    resize: none;
-}
-.terms {
-    width: 100px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.button {
-    border: 2px solid;
-    background: $itemsColor;
 
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: all 0.5s;
-    @include text($titleFontFamily, 14pt, uppercase, .1rem, $textSecondColor);
+.contactsContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }
+
+.contactsContainer input {
+  color: #ffffff;
+  outline: none;
+  width: 100%;
+  background: rgb(59, 59, 59);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1000px rgb(59, 59, 59) inset;
+}
+
+.contactsContainer textarea {
+  color: #ffffff;
+}
+
+.mUIInput {
+  width: 100%;
+}
+
+.mUITextarea {
+  width: 100%;
+}
+
+.label {
+  color: #b7b7b7 !important;
+}
+
+.terms {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  background: $itemsColor;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  @include text($titleFontFamily, 14pt, uppercase, .1rem, $textSecondColor);
+}
+
 .button:hover {
-    background: rgb(104, 154, 132);
-    color: #FFFFFF;
+  background: rgb(104, 154, 132);
+  color: #d2d0d0;
 }
+
 @media screen and (max-width: 850px) {
-    .contactsContainer form {
-        width: 80%;
-    }
+  .contactsContainer form {
+    width: 80%;
+  }
 }
 
 
