@@ -6,10 +6,14 @@ import Title from "../common/components/titile/Title";
 import todoImg from '../img/todo-b.png';
 import socialImg from '../img/social-b.png';
 import counterImg from '../img/counter-b.png';
+import cardsImg from '../img/Cards-b.png'
 
 const Projects = () => {
     const social = {
         backgroundImage: `url(${socialImg})`,
+    };
+    const cards = {
+        backgroundImage: `url(${cardsImg})`,
     };
     const todo = {
         backgroundImage: `url(${todoImg})`,
@@ -22,6 +26,11 @@ const Projects = () => {
             <div className={`${style.container} ${s.projectsContainer}`}>
                 <Title title={'projects'} direction={"right"} dark/>
                 <div className={s.projects}>
+                    <Project style={cards}
+                             title={'Cards learning'}
+                             description={"Create flashcards and learn new material"}
+                             demoUrl={'https://msseleznev.github.io/friday-app/#/login'}
+                             codeUrl={'https://github.com/msseleznev/friday-app'}/>
                     <Project style={social}
                              title={'Network'}
                              description={"The most incredible social network"}
@@ -29,12 +38,12 @@ const Projects = () => {
                              codeUrl={''}/>
                     <Project style={todo}
                              title={'Todo'}
-                             description={"The most convenient to-do list"}
+                             description={"Make your to-do list, to not forget anything"}
                              demoUrl={'https://msseleznev.github.io/todolist-app'}
                              codeUrl={'https://github.com/msseleznev/todolist-app'}/>
                     <Project style={counter}
                              title={'Counter'}
-                             description={"The most accurate counter in the world"}
+                             description={"In order not to lose count"}
                              demoUrl={'https://msseleznev.github.io/counter/'}
                              codeUrl={'https://github.com/msseleznev/counter'}/>
                 </div>
