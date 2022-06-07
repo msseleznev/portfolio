@@ -3,10 +3,10 @@ import style from '../common/styles/Container.module.css'
 import s from './Projects.module.scss'
 import Project from "./project/Project";
 import Title from "../common/components/titile/Title";
-import todoImg from '../img/todo-b.png';
-import socialImg from '../img/social-b.png';
-import counterImg from '../img/counter-b.png';
-import cardsImg from '../img/Cards-b.png'
+import todoImg from '../common/img/todo-b.png';
+import socialImg from '../common/img/social-b.png';
+import counterImg from '../common/img/counter-b.png';
+import cardsImg from '../common/img/Cards-b.png'
 
 const Projects = () => {
     const social = {

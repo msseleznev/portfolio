@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useFormik} from 'formik';
 import s from './Contacts.module.scss'
 import style from "../common/styles/Container.module.css";
@@ -6,6 +6,7 @@ import Title from "../common/components/titile/Title";
 import emailjs from '@emailjs/browser';
 import TextField from '@mui/material/TextField/TextField';
 import {styled} from '@mui/material/styles/';
+import Modal from "../common/components/Modal/Modal";
 
 
 type FormikErrorType = {
@@ -13,27 +14,10 @@ type FormikErrorType = {
     email?: string
     message?: string
 }
-const CssTextField = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'rgb(255,255,255)',
-    },
-    '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-            borderColor: '#969696',
-        },
-        '&:hover fieldset': {
-            borderColor: 'rgb(255,255,255)',
-        },
-        '&.Mui-focused fieldset': {
-            borderColor: 'rgb(104, 154, 132)',
-        },
-    },
-});
-
 
 const Contacts = () => {
-
-
+    const [isModal, setIsModal] = useState<boolean>(false)
+    const [message, setMessage] = useState<string>('The message was sent')
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -64,13 +48,11 @@ const Contacts = () => {
             emailjs.send('service_fvcygib', 'template_d4io23h', values, 'BYC0L6HDh7zMiKyYK')
                 .then((result) => {
                     formik.resetForm()
-
-                    alert('The message was sent')
+                    setIsModal(true)
                 }, (error) => {
-                    alert('Message send failed:' + error.text);
-                    debugger
+                    setIsModal(true)
+                    setMessage('Message send failed:' + error.text)
                 });
-
         },
     });
 
@@ -117,6 +99,9 @@ const Contacts = () => {
                         <input className={s.button} type="submit" value="Send"/>
                     </div>
                 </form>
+                <Modal active={isModal} setActive={setIsModal}>
+                    {message}
+                </Modal>
             </div>
         </div>
 
@@ -124,3 +109,19 @@ const Contacts = () => {
 };
 
 export default Contacts;
+const CssTextField = styled(TextField)({
+    '& label.Mui-focused': {
+        color: 'rgb(255,255,255)',
+    },
+    '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            borderColor: '#969696',
+        },
+        '&:hover fieldset': {
+            borderColor: 'rgb(255,255,255)',
+        },
+        '&.Mui-focused fieldset': {
+            borderColor: 'rgb(104, 154, 132)',
+        },
+    },
+});

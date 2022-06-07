@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../../img/angle_top.png);
+    background-image: url(../img/angle_top.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
@@ -41,7 +41,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../../img/angle_bottom.png);
+    background-image: url(../img/angle_bottom.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 100%;
@@ -51,14 +51,14 @@
 
 @media screen and (max-width: 1200px) {
     .light .angleTop {
-        background-image: url(../../img/angle_top_mobile.png);
+        background-image: url(../img/angle_top_mobile.png);
     }
 }
 
 
 @media screen and (max-width: 1200px) {
     .light .angleBottom {
-        background-image: url(../../img/angle_bottom_mobile.png);
+        background-image: url(../img/angle_bottom_mobile.png);
     }
 }
 
