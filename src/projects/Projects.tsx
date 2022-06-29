@@ -31,11 +31,7 @@ const Projects = () => {
                              description={"Create flashcards and learn new material"}
                              demoUrl={'https://msseleznev.github.io/friday-app/#/login'}
                              codeUrl={'https://github.com/msseleznev/friday-app'}/>
-                    <Project style={social}
-                             title={'Network'}
-                             description={"The most incredible social network"}
-                             demoUrl={''}
-                             codeUrl={''}/>
+
                     <Project style={todo}
                              title={'Todo'}
                              description={"Make your to-do list, to not forget anything"}
@@ -46,6 +42,10 @@ const Projects = () => {
                              description={"In order not to lose count"}
                              demoUrl={'https://msseleznev.github.io/counter/'}
                              codeUrl={'https://github.com/msseleznev/counter'}/>
+                    <Project style={social}
+                             title={'Network'}
+                             description={"The most incredible social network"}
+                             codeUrl={'https://github.com/msseleznev/way-of-the-Samurai-1.0-TS'}/>
                 </div>
 
             </div>

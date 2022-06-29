@@ -6,22 +6,33 @@ type ProjectPropsType = {
     title: string
     description: string
     style: CSSProperties | undefined
-    demoUrl: string
+    demoUrl?: string
     codeUrl: string
 }
-const Project: React.FC<ProjectPropsType> = ({title, style, description, demoUrl, codeUrl}) => {
+const Project: React.FC<ProjectPropsType> = (
+    {
+        title,
+        style,
+        description,
+        demoUrl,
+        codeUrl
+    }
+) => {
+
     return (
         <div className={s.project}>
             <div className={s.preview} style={style}>
-                <Button className={s.button}
-                        target={"_blank"}
-                        href={demoUrl}
-                        variant="contained"
-                        size={"small"}
-                        style={{
-                            backgroundColor: "rgb(129,196,164)"
-                        }}
-                >Demo</Button>
+                {demoUrl
+                    && <Button className={s.button}
+                               target={"_blank"}
+                               href={demoUrl}
+                               variant="contained"
+                               size={"small"}
+                               style={{
+                                   backgroundColor: "rgb(129,196,164)"
+                               }}
+                    >Demo</Button>}
+
                 <Button className={s.button} target={"_blank"}
                         href={codeUrl}
                         variant="contained"
