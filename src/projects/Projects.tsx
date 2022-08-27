@@ -3,12 +3,20 @@ import style from '../common/styles/Container.module.css'
 import s from './Projects.module.scss'
 import Project from "./project/Project";
 import Title from "../common/components/titile/Title";
-import todoImg from '../common/img/todo-b.png';
-import socialImg from '../common/img/social-b.png';
-import counterImg from '../common/img/counter-b.png';
-import cardsImg from '../common/img/Cards-b.png'
+import todoImg from '../common/img/todo.png';
+import socialImg from '../common/img/social.png';
+import counterImg from '../common/img/counter.png';
+import cardsImg from '../common/img/Cards.png';
+import psProjectImg from '../common/img/ps-project.png'
+import idpImg from '../common/img/idp.png'
 
 const Projects = () => {
+    const idp = {
+        backgroundImage: `url(${idpImg})`,
+    };
+    const psProject = {
+        backgroundImage: `url(${psProjectImg})`,
+    };
     const social = {
         backgroundImage: `url(${socialImg})`,
     };
@@ -26,6 +34,15 @@ const Projects = () => {
             <div className={`${style.container} ${s.projectsContainer}`}>
                 <Title title={'projects'} direction={"right"} dark/>
                 <div className={s.projects}>
+                    <Project style={idp}
+                             title={'Catalog'}
+                             description={"To expand the range of your products"}
+                             codeUrl={'https://github.com/msseleznev/idp-project'}/>
+                    <Project style={psProject}
+                             title={'Lending page'}
+                             description={"Landing pages for your business"}
+                             demoUrl={'https://msseleznev.github.io/ps-project/'}
+                             codeUrl={'https://github.com/msseleznev/ps-project'}/>
                     <Project style={cards}
                              title={'Cards learning'}
                              description={"Create flashcards and learn new material"}
