@@ -7,7 +7,6 @@ import {Priority} from "./priority/Priority";
 import ReactTypingEffect from 'react-typing-effect'
 
 
-
 export const About = () => {
     return (
 
@@ -18,7 +17,8 @@ export const About = () => {
                     <div className={s.labelWrapItem}>
                         <Priority title={"Fast"}
                                   description={"Fast load times and lag free interaction, my highest priority."}/>
-                        <Priority title={"Intuitive"} description={"Strong preference for easy to use, intuitive UI."}/>
+                        <Priority title={"Intuitive"}
+                                  description={"Strong preference for easy to use, intuitive UI."}/>
                     </div>
                     <div className={s.labelWrapItem}>
                         <Priority title={"Responsive"}
@@ -34,13 +34,18 @@ export const About = () => {
                         <p> and I'm a </p>
                         <ReactTypingEffect
                             speed={100}
-                            eraseSpeed = {100}
-                            typingDelay ={800}
+                            eraseSpeed={100}
+                            typingDelay={800}
                             text={["Front-end Developer"]}
                         />
+                        <a target={"_blank"}
+                           href={"https://drive.google.com/file/d/1CdKYlFEdfmOVR36ARScJgapv0dHkv8aU/view?usp=sharing"}
+                           rel="noreferrer">
+                            <div className={s.button}>My CV</div>
+                        </a>
                     </div>
                     <div className={s.photo}>
-                        <img src={photo}/>
+                        <img src={photo} alt={photo}/>
                     </div>
 
                 </div>

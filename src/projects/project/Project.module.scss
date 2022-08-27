@@ -9,6 +9,7 @@
   align-items: center;
   text-align: center;
   padding-bottom: 10px;
+  margin-bottom: 20px;
   @include text($titleFontFamily, 12pt, normal, .1rem, $textSecondColor);
 
   .preview {
